@@ -35,8 +35,8 @@ pipeline {
             steps {
                 script {
                     echo "deploying"
-                    sh "kubectl get po"
-                }
+                     sh "kubectl create deployment nginx-deployment --image=nginx"   
+              }
             }
         }
     }   
